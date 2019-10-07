@@ -11,4 +11,4 @@ DetailPrint "Install service: $1"
 nsExec::Exec '"$0" install "$1" "$2"'
 nsExec::Exec '"$0" set "$1" AppDirectory "$3"'
 nsExec::Exec '"$0" set "$1" AppParameters "$4"'
-nsExec::Exec '"$0" start "$1"'
+nsExec::Exec '"$0" set "$1" Start SERVICE_DEMAND_START'
